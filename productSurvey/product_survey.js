@@ -6,6 +6,7 @@ function submitFeedback() {
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value; // Fixed typo!
     const feedback = document.getElementById('feedbackText').value;
+    const userExperience = document.getElementById('userExperince').value
 
     console.log("line12: before the alert");
     alert('Thank you for your valuable feedback');
@@ -18,8 +19,10 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
+    document.getElementById('experiance').innerHTML = userExperience;
 
     document.getElementById('userInfo').style.display = 'block';
+    
 }
 
 // Attach submitFeedback to the button ONCE
